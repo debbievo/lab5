@@ -17,19 +17,21 @@
 	<div class="container">
 		<h1>My HCI Friends</h1>
 		<div class="fakeFriends">
-<!--			<h3>Fake Friend</h3>
+			<h3>Fake Friend</h3>
 			<img src="http://lorempixel.com/500/500/people" class="img-responsive img-rounded">
 			<p>All my friends are imaginary</p>
--->			{{#each friends}}
-				<h3>
-					<a href="#" class="friends">{{name}}</a>
-				</h3>
-				<img src="{{imageURL}}" class="img-responsive img-rounded">
-				<p>{{description}}</p>
-				<hr>
-			{{/each}}
 		</div>
-
+		{{#each friends}}
+		<div class="fakeFriends">
+			<h3>
+				<a href="#" class="friends">{{name}}</a>
+			</h3>
+			<img class="img-responsive img-rounded" src="{{imageURL}}">
+			<p>{{description}}</p>
+			<hr>
+		</div>
+		{{/each}}
+		
 		<form id="addFriendForm" role="form" method="get" action="/add">
 			<h3>Add a friend</h3>
 		    <div class="form-group">
