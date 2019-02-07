@@ -1,6 +1,7 @@
 /* applies to anything of class "example-class-selector" */
 .example-class-selector {
 	margin-top: 2em;
+
 }
 
 /* applies to any <p> descendants of an element of class "example-class-selector" */
@@ -11,4 +12,9 @@
 
 h1, h2, h3, h4, h5 {
 	color: #8382BF;
+}
+
+.fakeFriends{
+    width:50%;
+    max-width:350px;
 }
